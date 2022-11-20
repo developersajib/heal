@@ -1,0 +1,398 @@
+/*** General ***/
+
+@font-face {
+    font-family: 'Oraqle Script';
+    src: url('../fonts/OraqleScript.woff2') format('woff2'),
+        url('../fonts/OraqleScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Pridi', serif;
+}
+.section{
+    padding: 60px 0;
+    .hl-subtitle{
+        font-family: 'Oraqle Script';
+        font-size: 29px;
+        color: $primary;
+    }
+    .hl-title{
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .hl-text{
+        font-family: 'Helvetica', serif;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+}
+.hl-navbar{
+    .nav-link{
+        font-weight: 500 !important;
+        color: #000 !important;
+        text-transform: uppercase;
+        font-size: 13px;
+        &.active,
+        &:hover{
+            color: $primary !important;
+        }
+    }
+}
+.hl-banner{
+    height: 650px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    .hl-banner-overlay{
+        background: rgba(0,0,0,0.5);
+        .hl-banner-captions{
+            text-align: center;
+            .hl-title{
+                color: #fff;
+                font-size: 90px;
+                font-family: 'Helvetica', serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                line-height: 60px;
+            }
+            .hl-subtitle{
+                color: #fff;
+                font-size: 52px;
+                font-family: 'Helvetica', serif;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .hl-text{
+                color: #fff;
+                font-size: 13px;
+                font-family: 'Helvetica', serif;
+                font-weight: normal;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            .hl-link{
+                margin-top: 35px;
+            }
+        }
+    }
+}
+
+
+
+.hl-about{
+    padding: 60px;
+    .hl-about-content{
+        .hl-subtitle{
+            font-family: 'Oraqle Script';
+            font-size: 29px;
+            color: $primary;
+        }
+        .hl-title{
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 50px;
+            margin-bottom: 20px;
+        }
+        .hl-text{
+            font-family: 'Helvetica', serif;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .hl-name{
+            font-family: 'Helvetica', serif;
+            color: $primary;
+            font-weight: bold;
+        }
+
+        .hl-signature{
+            margin-top: 15px;
+        }
+    }
+
+    .hl-about-image{
+        .image-wrap{
+            position: relative;
+            margin-top: 50px;
+            .image-small{
+                position:absolute;
+                top:-50px;
+                right:-50px;
+            }
+        }
+    }
+}
+
+.hl-diseases{
+    background: #f8f7f6;
+}
+
+.hl-community{
+    .container{
+        position:relative;
+        &:after{
+            content: "";
+            background: url("../images/leaf.png");
+            bottom: -100px;
+            left: -60px;
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background-repeat: no-repeat;
+        }
+    }
+    .hl-title{
+        color: #fff;
+    }
+    .hl-text{
+        color: #fff;
+    }
+    .hl-community-content{
+        padding: 60px ;
+        height: 100%;
+    }
+    .hl-community-image{
+        height: 100%;
+        img{
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
+
+.hl-retreat{
+    padding-bottom: 80px;
+    .hl-retreat-list{
+        .hl-retreat-item{
+            padding: 10px;
+            position:relative;
+            .hl-retreat-content{
+                position: absolute;
+                bottom: -60px;
+                left: 0;
+                margin: 30px;
+                text-align: center;
+                .hl-retreat-title {
+                    background: #fff;
+                    padding: 10px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    height: 80px;
+                    padding: 20px;
+                }
+                .hl-retreat-link {
+                    background: $primary;
+                    padding: 10px;
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 500;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.hl-testimonial{
+    background: #f8f7f6;
+    .hl-text{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .hl-testimonial-wrap{
+        margin-top: 30px;
+        .swiper-wrapper{
+            margin-bottom: 50px;
+            .hl-testimonial-item{
+                box-shadow: 2px 5px 10px 1px rgb(0 0 0 / 10%);
+                border-radius: 4px;
+                .hl-testimonial-content {
+                    background: #fff;
+                    padding: 30px;
+                    text-align: center;
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+            }
+
+        }
+
+        span.swiper-pagination-bullet {
+            color: aea697;
+        }
+        span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+            width: 12px;
+            height: 12px;
+            top: 2px;
+            position: relative;
+            background: $primary;
+        }
+    }
+}
+
+.hl-team{
+    .hl-text{
+        max-width: 580px;
+        margin: 0 auto;
+    }
+    .hl-team-wraps{
+        margin-top: 30px;
+        nav{
+            margin-bottom: 40px;
+            a{
+                font-size: 19px;
+                color: #757575;
+                &:hover,
+                &.active{
+                    color: $primary;
+                    position:relative;
+                    &:after{
+                        content: "";
+                        width: calc(100% - 2rem);
+                        height: 2px;
+                        position: absolute;
+                        bottom: 0;
+                        background: $primary;
+                        left: 50%;
+                        text-align: center;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+    .hl-team-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        .hl-team-item{
+            width: 20%;
+            padding: 5px;
+            .hl-team-content{
+                margin-top: 20px;
+                .hl-name{
+                    font-family: 'Helvetica', serif ;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                .hl-post{
+                    font-family: 'Helvetica', serif ;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.hl-newsletter{
+    background-image: url('../images/newsletter-bg.jpg');
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .hl-title,
+    .hl-text{
+        color: #fff;
+    }
+    .hl-newsletter-form{
+        margin-top: 40px;
+        .row{
+            margin-left: 5px;
+            margin-right: 5px;
+            .col-md-4{
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+        .btn.btn-secondary{
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+            margin-top: 15px;
+        }
+    }
+}
+
+.hl-more-info{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .hl-title{
+        font-size: 42px;
+    }
+    .hl-info-icon-box-wrap{
+        .hl-info-icon-box-item{
+            .hl-iibi-icon{
+                margin-bottom: 15px;
+            }
+            .hl-iibi-content{
+                .hl-iibi-text{
+                    font-size: 13px;
+                }
+                .hl-iibi-action{
+                    margin-top: 30px;
+                    a{
+                        padding:5px 15px;
+                        border:3px solid $secondary;
+                        color: $secondary;
+                        border-radius:6px;
+                        font-weight: 500;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.hl-footer{
+    background-image: url('../images/footer-bg.jpg');
+    .hl-footer-about{
+        .hl-footer-about-image{
+            margin-bottom: 20px;
+        }
+        .hl-footer-content{
+            font-size: 13px;
+        }
+    }
+
+    .hl-footer-nav{
+        ul{
+            li{
+                a{
+                    color: #fff;
+                    font-size: 13px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .hl-footer-social{
+        ul{
+            li{
+                a{
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .hl-footer-contact{
+        margin-top: 30px;
+        .hl-footer-contact-item{
+            color: #fff;
+            font-size: 13px;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
